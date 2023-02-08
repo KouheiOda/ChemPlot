@@ -29,7 +29,24 @@ You can find the details for the background on ChemPlot in our paper. You can do
 
 ## Installation
 
-There are two different options to install ChemPlot:
+There are three different options to install ChemPlot:
+
+### Option 0: Use conda and pip for developmental purpose
+
+To clone this forked version of ChemPlot, run:
+
+    git clone https://github.com/KouheiOda/ChemPlot-web.git
+
+To install packages except for ChemPlot, run:
+
+    conda env create -n chemplot-dev -f requirements_conda_dev.yml
+
+To install ChemPlot, run:
+
+    pip install -e .
+
+Now, path to ChemPlot is set to ./chemplot , that means chemplot is editable.
+Any changes made in files under ./chemplot will affect chemplot imported in your code.
 
 ### Option 1: Use conda
 

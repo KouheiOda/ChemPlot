@@ -1,0 +1,26 @@
+name: chemplot-dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8  # add python and its version
+  - rdkit==2022.9.1  # add rdkit version
+  - pandas>=1.3.5  # add pandas version
+  - numpy<1.24.0  # add numpy version
+  - matplotlib==3.3.2
+  - seaborn==0.11.1
+  - umap-learn
+  - scikit-learn==0.24.2
+  - bokeh==2.4.3  # add bokeh version
+  - scipy
+  - mordred
+  - networkx
+  # testing
+  - pytest
+  - pytest-cov
+  # additionals
+  - pip
+  - plotly
+  - pip:
+    - streamlit
+    - mols2grid
+    - streamlit-authenticator

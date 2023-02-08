@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="chemplot", 
+    name="chemplot",
     version="1.2.1",
     author="Murat Cihan Sorkun, Dajt Mullaj",
     author_email="mcsorkun@gmail.com, dajt.mullai@gmail.com",
@@ -14,7 +14,7 @@ setup(
     url="https://github.com/mcsorkun/ChemPlot",
     project_urls={
         "Bug Tracker": "https://github.com/mcsorkun/ChemPlot/issues",
-	"Documentation": "https://chemplot.readthedocs.io/en/latest/"
+        "Documentation": "https://chemplot.readthedocs.io/en/latest/",
     },
     license="BSD",
     packages=["chemplot", "chemplot.tests"],
@@ -29,26 +29,26 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Natural Language :: English",
-        "Topic :: Scientific/Engineering"
+        "Topic :: Scientific/Engineering",
     ],
     keywords="chemoinformatics, dimension reduction",
-    install_requires=[
-	"pandas>=1.1.3",
-	"numpy>=1.19.2",
-	"matplotlib==3.3.2",
-	"seaborn==0.11.1",
-	"umap-learn>=0.5.1",
-	"scikit-learn==0.24.2",
-	"bokeh>=2.2.3",
-	"scipy>=1.5.2",
-	"mordred>=1.2.0",
-    	"networkx>=2.5"
-    ],
-    test_suite="pytest",
-    tests_require=[
-    "pytest>=6.2.4",
-    ],
+    # install_requires=[
+	# "pandas>=1.1.3",
+	# "numpy>=1.19.2",
+	# "matplotlib==3.3.2",
+	# "seaborn==0.11.1",
+	# "umap-learn>=0.5.1",
+	# "scikit-learn==0.24.2",
+	# "bokeh>=2.2.3",
+	# "scipy>=1.5.2",
+	# "mordred>=1.2.0",
+    # 	"networkx>=2.5"
+    # ],
+    # test_suite="pytest",
+    # tests_require=[
+    # "pytest>=6.2.4",
+    # ],
     include_package_data=True,
     package_data={'': ['data/*.csv'], 'chemplot.tests': ['test_data/*.csv']},
-    python_requires='>=3.6',
+    # python_requires='>=3.6',
 )
